@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareConnect - Your Healthcare Partner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #2b7a78;
+      color: #fff;
+      padding: 20px; text-align: center;
+    }
+    nav {
+      display: flex; justify-content: center;
+      gap: 20px;
+      background-color: #3aafa9;
+      padding: 10px;
+    }
+    nav a {
+      color: white; text-decoration: none; font-weight: bold;
+    }
+    .hero {
+      padding: 50px; text-align: center;
+      background-color: #def2f1;
+    }
+    .hero h1 { margin-bottom: 20px; }
+    .content {
+      display: flex; flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px; gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2b7a78;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CareConnect</h1>
+    <p>Your Partner in Health & Wellness</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to CareConnect</h1>
+    <p>Quality healthcare, anytime and anywhere. Talk to our AI agent for instant help!</p>
+  </section>
+
+  <section class="content">
+    <div class="card">
+      <h3>Virtual Doctor</h3>
+      <p>Connect with certified doctors instantly through chat or video call.</p>
+    </div>
+    <div class="card">
+      <h3>Health Records</h3>
+      <p>Securely manage and access your medical history anytime.</p>
+    </div>
+    <div class="card">
+      <h3>Symptom Checker</h3>
+      <p>Enter your symptoms and get guidance powered by AI.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CareConnect. All rights reserved.
+  </footer>
+
+  <!-- AI Agent Integration -->
+  <script src="https://cdn.jsdelivr.net/npm/@play-ai/agent-web-sdk@ht"></script>
+  <script>
+    window.addEventListener("load", () => {
+      PlayAI.open('cR2ZKcVAUbCXsMVdqRmUA');
+    });
+  </script>
+</body>
+</html>
